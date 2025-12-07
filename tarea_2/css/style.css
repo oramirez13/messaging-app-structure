@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #37443a;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.telefono {
+    width: 350px;
+    height: 620px;
+    background: #f7f7f7;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #252c28;
+    position: relative;
+}
+
+.barra-superior {
+    background: #075e54;
+    color: white;
+    padding: 12px 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.foto-usuario {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.pestanas {
+    display: flex;
+    align-items: center;
+    background: #128c7e;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.pestana {
+    flex: 1;
+    padding: 10px 0;
+    cursor: default;
+}
+
+.pestana-activa {
+    flex: 1;
+    padding: 10px 0;
+    border-bottom: 3px solid white;
+    font-weight: bold;
+    cursor: default;
+}
+
+.lista-chats {
+    overflow-y: auto;
+    height: calc(100% - 120px);
+    background: white;
+}
+
+.item-chat {
+    display: flex;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.foto {
+    width: 48px;
+    height: 48px;
+    background: #bbb;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.info .nombre {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.info .mensaje {
+    font-size: 13px;
+    color: #555;
+}
+
+.no-leidos {
+    margin-left: auto;
+    text-align: right;
+}
+
+.hora {
+    font-size: 12px;
+    color: gray;
+}
+
+.cantidad-no-leidos {
+    background: #25d366;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.flotante {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #128c7e;
+    width: 45px;
+    height: 45px;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
