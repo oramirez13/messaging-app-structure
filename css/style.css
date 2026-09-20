@@ -1,0 +1,151 @@
+/* RESET Y FUENTE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* FONDO EXTERNO */
+body {
+    background: #37443a;   /* ← color que pediste en el segundo */
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* “TELÉFONO” */
+.phone {
+    width: 350px;
+    height: 620px;
+    background: #f7f7f7;
+    border-radius: 15px;
+    overflow: hidden;
+
+    /* ← AQUÍ están los dos detalles que querías */
+    border: 3px solid #122c1c; /* del primer CSS */
+    position: relative;
+}
+
+/* TOP BAR */
+.topbar-table {
+    width: 100%;
+    background: #075e54;
+    color: white;
+}
+
+.topbar-title {
+    padding: 12px 15px;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* TABS */
+.tabs-table {
+    width: 100%;
+    background: #128c7e;
+    color: white;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tabs-table th {
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.active {
+    border-bottom: 3px solid white;
+    font-weight: bold;
+}
+
+/* FOTO DEL USUARIO EN TABS */
+.user-photo-td {
+    width: 45px;
+    padding: 5px;
+}
+
+.user-tab-img {
+    width: 35px;     /* ← del segundo CSS */
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+/* LISTA DE CHATS */
+.chat-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.chat-list-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+/* FOTO DEL CONTACTO */
+.photo-td {
+    width: 48px;
+    padding: 10px;
+}
+
+.photo-img {
+    width: 48px;    /* ← del segundo CSS */
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* INFO DEL CHAT */
+.info-td {
+    padding: 10px;
+}
+
+.message-preview {
+    font-size: 13px;
+    color: #555;
+}
+
+/* DERECHA (hora + badge) */
+.right-td {
+    width: 60px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.time {
+    font-size: 12px;
+    color: gray;
+}
+
+.badge {
+    background: #25d366;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* BOTÓN FLOTANTE */
+.fab {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #128c7e;
+    width: 45px;
+    height: 45px;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
